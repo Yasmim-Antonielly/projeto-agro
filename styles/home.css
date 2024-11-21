@@ -1,0 +1,57 @@
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  padding: 20px 40px 20px 40px;
+  align-items: start;
+  justify-content: center;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  div:nth-child(2) {
+    margin-inline: auto;
+  }
+
+  .nav-pages {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .nav-pages a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-pages a:hover {
+    text-decoration: underline;
+  }
+}
+
+.descriptions {
+  padding: 14px 96px 60px 96px;
+}
+
+.sections {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  section {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      padding-bottom: 30px;
+    }
+
+    iframe {
+      padding: 50px;
+    }
+  }
+}
