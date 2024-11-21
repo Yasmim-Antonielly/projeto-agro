@@ -27,36 +27,6 @@ nav .nav-pages {
   flex-grow: 1;
 }
 
-.descriptions {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 60px 32px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.descriptions h1 {
-  font: var(--h1);
-  margin-bottom: 24px;
-  text-align: left;
-}
-
-.descriptions p {
-  font: var(--body-text-regular-lg);
-  color: var(--text-color-body);
-  max-width: 1152px;
-  text-align: center;
-}
-
-@media (max-width: 1152px) {
-  .descriptions {
-    padding: 40px 24px;
-  }
-}
-
 .sections {
   display: grid;
 
