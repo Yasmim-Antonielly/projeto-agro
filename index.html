@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    
-    <link rel="stylesheet" href="./styles/index.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="container">
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-background">
+      <header class="container">
         <nav class="grid flow-col">
-            <div class="logo">
-                <img src="./assets/logo.svg" alt="Lumera Logo">
-                <img src="./assets/logo-text.svg" alt="Lumera Logo Texto">
-            </div>
-            <div class="nav-pages">
-                <a>Home</a>
-                <a>Sobre a Problemática</a>
-                <a>Nossa Solução</a>
-                <a>Impacto Social e Ambiental</a>
-                <a href="apoie.html">Apoie</a>
-            </div>
+          <div class="logo">
+            <img src="./assets/logo.svg" alt="Lumera Logo" />
+            <img src="./assets/logo-text.svg" alt="Lumera Logo Texto" />
+          </div>
+          <div class="nav-pages">
+            <a>Home</a>
+            <a>Sobre a Problemática</a>
+            <a>Nossa Solução</a>
+            <a>Impacto Social e Ambiental</a>
+            <a href="apoie.html">Apoie</a>
+          </div>
         </nav>
         <div class="descriptions">
-            <h1>
-                Energia Sustentável para um
-                <span class="highlights">Futuro Justo</span>
-            </h1>
-            <p>
-                Nosso projeto para a Global Solution 2024 apresenta uma proposta de microgrids comunitários que utilizam energia solar e eólica para fornecer eletricidade limpa e acessível a comunidades carentes, promovendo autonomia e desenvolvimento sustentável.
-            </p>
+          <h1>
+            Energia Sustentável para um <br />
+            <span class="highlights">Futuro Justo</span>
+          </h1>
+          <p>
+            Nosso projeto para a Global Solution 2024 apresenta uma proposta de
+            microgrids comunitários que utilizam energia solar e eólica para
+            fornecer eletricidade limpa e acessível a comunidades carentes,
+            promovendo autonomia e desenvolvimento sustentável.
+          </p>
         </div>
-    </header>
-    <div class="sections">
-        <section>
-            <h2>Nossa Missão</h2>
-            <p>
-                Facilitar a transição para um futuro mais sustentável, garantindo que comunidades e indivíduos tenham acesso acessível e equitativo às tecnologias de energia renovável.
-            </p>
-        </section>
-        <section>
-            <h2>Por Que Microgrids?</h2>
-            <p>
-                Uma alternativa eficiente e econômica para geração local de energia limpa.
-            </p>
-        </section>
-        <section>
-            <iframe width="860" height="515" src="https://www.youtube.com/embed/ebZK9wtOv_k?si=whLcQGAkZvvBDqjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+      </header>
     </div>
-</body>
+    <div class="sections">
+      <section>
+        <h2>Nossa Missão</h2>
+        <p>
+          Facilitar a transição para um futuro mais sustentável, garantindo que
+          comunidades e indivíduos tenham acesso acessível e equitativo às
+          tecnologias de energia renovável.
+        </p>
+      </section>
+      <section>
+        <h2>Por Que Microgrids?</h2>
+        <p>
+          Uma alternativa eficiente e econômica para geração local de energia
+          limpa.
+        </p>
+      </section>
+      <section>
+        <iframe
+          width="860"
+          height="515"
+          src="https://www.youtube.com/embed/ebZK9wtOv_k?si=whLcQGAkZvvBDqjw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+      <div id="contact-form"></div>
+      <script>
+        // Função para carregar o componente
+        fetch("./components/ContactForm/index.html")
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("contact-form").innerHTML = html;
+          });
+      </script>
+    </div>
+  </body>
 </html>
