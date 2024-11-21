@@ -51,7 +51,6 @@ nav .nav-pages {
   text-align: center;
 }
 
-/* Responsividade */
 @media (max-width: 1152px) {
   .descriptions {
     padding: 40px 24px;
@@ -60,8 +59,7 @@ nav .nav-pages {
 
 .sections {
   display: grid;
-  /* align-items: center; */
-  /* justify-content: center; */
+
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 40px;
@@ -87,7 +85,6 @@ ul {
   text-align: left;
 }
 
-/* Adicionando as classes necessárias para o header background */
 .header-background {
   background-color: var(--background-top-silver);
   width: 100vw;
@@ -98,7 +95,6 @@ ul {
   margin-right: -50vw;
 }
 
-/* Ajustes para o container do header */
 .container {
   width: 100%;
   max-width: 1440px;
