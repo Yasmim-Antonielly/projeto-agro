@@ -1,56 +1,108 @@
 nav {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-    padding: 20px 40px 20px 40px;
-    align-items: start;
-    justify-content: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  padding: 20px 40px 20px 40px;
+  align-items: start;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
-    div {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    div:nth-child(2) {
-        margin-inline: auto;
-    }
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
+nav div:nth-child(2) {
+  margin-inline: auto;
+}
 
-    .nav-pages {
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        flex-grow: 1;
-    }
+nav .nav-pages {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .descriptions {
-    padding: 14px 96px 60px 96px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptions h1 {
+  font: var(--h1);
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.descriptions p {
+  font: var(--body-text-regular-lg);
+  color: var(--text-color-body);
+  max-width: 1152px;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1152px) {
+  .descriptions {
+    padding: 40px 24px;
+  }
 }
 
 .sections {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px;
+  display: grid;
+  /* align-items: center; */
+  /* justify-content: center; */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: left;
+}
 
-    section {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+.sections section {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-        p {
-            padding-bottom: 30px;
-        }
+.sections section p {
+  padding-bottom: 10px;
+  text-align: left;
+}
 
-        iframe {
-            padding: 50px;
-        }
-    }
+.sections section iframe {
+  padding: 50px;
 }
 
 ul {
-    text-align: left;
+  text-align: left;
+}
+
+/* Adicionando as classes necessárias para o header background */
+.header-background {
+  background-color: var(--background-top-silver);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Ajustes para o container do header */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
 }
